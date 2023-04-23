@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <style>
+        body{
+            background-color: skyblue;
+        }
+        .Head{
+            text-align: center;
+            font-size: 3em;
+        }
+        .Main{
+            margin: 30px;
+            border: 2px;
+            border-style: solid;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            position: relative;
+        }
+        .f-ele{
+            line-height: 30px;
+        }
+        #Form{
+            margin: 30px auto;
+            padding: 30px;
+            font-size: 1.5em;
+
+        }
+        hr.Break{
+            border-top: 15px dotted skyblue;
+            width: 60%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="Main">
+        <h1 class="Head">Survey form</h1>
+       <div id="Form">
+        <legend >Personal Details</legend><br><br>
+        <label class="f-ele" for="fname">First Name:</label>
+        <input type="text" name="fname"><br><br>
+        <label for="address">Address:</label>
+        <input type="text" name="address"><br><br>
+        <label for="mail">Email :</label>
+        <input type="email" name="fname"><br><br>
+        <label for="number">Number :</label>
+        <input type="number" name="no"><br><br>
+        <label for="Gender">Please select your gender :</label><br>
+       <input type="radio" value="Male">
+       <label for="Male">Male</label><br><br>
+       <input type="radio" value="Female">
+       <label for="Male">Female</label><br><br>
+       <input type="radio" value="Others">
+       <label for="Male">Other</label><br><br>
+       <hr class="Break"><br><br>
+       <p>Write about yourself</p><br>
+       <textarea name="About" id="" cols="130" rows="10"></textarea>
+       <br><br>
+       <button type="button">Submit</button>
+       </div>
+
+
+    </div>
+</body>
+</html>
